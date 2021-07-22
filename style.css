@@ -40,3 +40,12 @@ main {
 .selectedHouse {
   display: flex;
 }
+
+#label-family {
+  display: flex;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+}
