@@ -5,9 +5,15 @@
 
 .header {
     display: flex;
+    justify-content: space-between;
     background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
     justify-content: left;
+}
+
+.trybewarts-login {
+    display: flex;
+    justify-content: space-between;
 }
