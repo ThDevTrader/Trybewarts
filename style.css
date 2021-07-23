@@ -8,10 +8,12 @@
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
   align-items: center;
+  height: 100px;
 }
 
 .trybewarts-header-logo {
   justify-content: left;
+  height: 80px;
 }
 
 .trybewarts-login {
@@ -51,6 +53,10 @@ main {
 }
 
 .rating-container {
+  display: flex;
+}
+
+.agreement-container {
   display: flex;
 }
 
