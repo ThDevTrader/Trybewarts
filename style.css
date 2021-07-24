@@ -60,3 +60,7 @@ main {
   display: flex;
 }
 
+#counter {
+  display: flex;
+  justify-content: flex-end;
+}
