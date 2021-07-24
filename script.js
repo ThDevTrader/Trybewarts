@@ -23,13 +23,18 @@ check.addEventListener('click', (event) => {
   }
 });
 
-text.addEventListener('keyup', (event) => { //seguindo instruções da página: https://www.horadecodar.com.br/2020/12/09/contador-de-caracteres-em-uma-textarea-com-javascript/
-  const textLength = text.value.length;     //com o uso de "keypress" o valor não decrementava. "keydown" impedia o uso de backspace e travou a digitação ao final
-  const maxCharacters = 500;                //então, seguindo ideias deste video: https://www.youtube.com/watch?v=0X12LKGWcmE&ab_channel=LucasSilva
-  const left = maxCharacters - textLength;  //e da página https://api.jquery.com/keypress/ o "keyup" resolveu o problema
+// Requisito 20 realizado seguindo instruções da página: https://www.horadecodar.com.br/2020/12/09/contador-de-caracteres-em-uma-textarea-com-javascript/
+// com o uso de "keypress" o valor não decrementava. "keydown" impedia o uso de backspace e travou a digitação ao final
+// então, seguindo ideias deste video: https://www.youtube.com/watch?v=0X12LKGWcmE&ab_channel=LucasSilva
+// e da página https://api.jquery.com/keypress/ o "keyup" resolveu o problema
+
+text.addEventListener('keyup', (event) => {
+  const textLength = text.value.length;
+  const maxCharacters = 500;
+  const left = maxCharacters - textLength;
   const counter = document.querySelector('#counter');
   counter.innerHTML = left;
-  if (textLength >= maxCharacters){
+  if (textLength >= maxCharacters) {
     event.preventDefault();
   }
-})
+});
